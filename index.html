@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC AI Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>NOC AI</h2>
+        <a href="#chat">Chatbot</a>
+        <a href="#status">Network Status</a>
+        <a href="#report">Generate Report</a>
+        <a href="#system">System Metrics</a>
+    </div>
+
+    <div class="content">
+        <div id="chat" class="container">
+            <h1>🤖 Chatbot</h1>
+            <iframe src="https://copilotstudio.microsoft.com/environments/Default-7fc0cae6-15fd-4c49-9233-a1ab3f067b1a/bots/cr60b_netGenius/webchat?__version__=2" class="chatbot"></iframe>
+        </div>
+        
+        <div id="status" class="container">
+            <h1>📊 Real-Time Network Status</h1>
+            <div class="report" id="networkStatus">Loading...</div>
+            <button onclick="fetchNetworkStatusPDF()" class="pdf-button">📥 Download Network Status PDF</button>
+        </div>
+        
+        <div id="report" class="container">
+            <h1>📜 Network Operations Report</h1>
+            <div class="report" id="networkReport">Loading...</div>
+            <button onclick="fetchReport()" class="pdf-button">📥 Download Operations Report PDF</button>
+        </div>
+
+        <div id="system" class="container">
+            <h1>🖥️ Real-Time System Metrics</h1>
+            <div class="report" id="systemMetrics">Loading...</div>
+            <button onclick="fetchSystemMetricsPDF()" class="pdf-button">📥 Download System Metrics PDF</button>
+        </div>
+    </div>
+
+    <button id="mode-toggle" class="mode-toggle">Toggle Dark Mode</button>
+
+    <script src="script.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92d408d699792089',t:'MTc0NDEzOTEwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

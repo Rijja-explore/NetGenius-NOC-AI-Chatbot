@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Light mode gradient */
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark mode gradient */
+    color: #e0e0e0;
+}
+
+body.dark-mode .sidebar {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+body.dark-mode .sidebar a:hover {
+    background: linear-gradient(90deg, #34495e, #2c3e50);
+    transform: scale(1.05);
+}
+
+body.dark-mode .content {
+    background: linear-gradient(135deg, #2d2d2d, #3a3a3a);
+}
+
+body.dark-mode .container {
+    background: linear-gradient(135deg, #333, #444);
+    border-color: #555;
+}
+
+body.dark-mode .report {
+    background: linear-gradient(135deg, #444, #555);
+    color: #e0e0e0;
+}
+
+body.dark-mode .pdf-button {
+    background: linear-gradient(90deg, #2980b9, #3498db);
+}
+
+body.dark-mode .pdf-button:hover {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    transform: scale(1.1);
+}
+
+body.dark-mode .pdf-button:active {
+    transform: scale(0.95);
+}
+
+body.dark-mode .mode-toggle {
+    background: linear-gradient(90deg, #2980b9, #3498db);
+}
+
+body.dark-mode .mode-toggle:hover {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    transform: scale(1.1);
+}
+
+body.dark-mode .mode-toggle:active {
+    transform: scale(0.95);
+}
+
+.sidebar {
+    width: 220px;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-right: 2px solid #3498db;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.sidebar a:hover {
+    background: linear-gradient(90deg, #34495e, #2c3e50);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(135deg, #f4f4f4, #ffffff);
+    transition: background 0.3s;
+}
+
+.container {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.container h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .container h1 {
+    color: #3498db;
+}
+
+.report {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode .report {
+    background: linear-gradient(135deg, #444, #555);
+    border-color: #666;
+    color: #e0e0e0;
+}
+
+.pdf-button {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-button:hover {
+    background: linear-gradient(90deg, #2980b9, #3498db);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-button:active {
+    transform: scale(0.95);
+}
+
+.chatbot {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mode-toggle:hover {
+    background: linear-gradient(90deg, #2980b9, #3498db);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mode-toggle:active {
+    transform: scale(0.95);
+}
