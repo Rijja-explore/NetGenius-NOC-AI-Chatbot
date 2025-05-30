@@ -26,6 +26,16 @@ NetGenius-NOC-AI-Chatbot is a web-based application that provides **real-time ne
 
 ---
 
+## ScreenShot 
+---
+![image](https://github.com/user-attachments/assets/241e229b-f5f2-41f6-a7fc-f41bc46ab121)
+![image](https://github.com/user-attachments/assets/6ea15fc3-3645-4696-bca3-821a2742f486)
+![image](https://github.com/user-attachments/assets/9e1f86f1-ac69-4234-8921-d357ac9fc92d)
+
+
+
+
+
 ## 📦 Installation Guide
 
 ### 🔁 Step 1: Clone the Repository
@@ -35,13 +45,13 @@ git clone https://github.com/yourusername/noc-ai-chatbot.git
 cd noc-ai-chatbot 
 ```
 
-###📦 Step 2: Install Required Dependencies
+📦 Step 2: Install Required Dependencies
 Make sure you have Python 3.7+ installed. Then run:
 
 ```bash
 pip install -r requirements.txt
 ```
-###🔧 Step 3: Configure Zabbix Connection
+🔧 Step 3: Configure Zabbix Connection
 Open the file zabbix_connector.py and update it with your Zabbix server credentials:
 
 ```bash
