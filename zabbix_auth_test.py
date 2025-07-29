@@ -4,7 +4,7 @@ import json
 # Replace with your actual Zabbix server address
 ZABBIX_API_URL = "http://192.168.93.100/zabbix/api_jsonrpc.php"  # Update with your Zabbix server IP or domain
 ZABBIX_USER = "Admin"  # Default admin username (change if needed)
-ZABBIX_PASSWORD = "Rijja@123"  # Default password (change if you've updated it)
+ZABBIX_PASSWORD = "zabbix"  # Default password (change if you've updated it)
 
 # Create the authentication request payload
 payload = {
