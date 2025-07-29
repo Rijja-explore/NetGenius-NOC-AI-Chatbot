@@ -89,9 +89,7 @@ Click on Generate Report to create a downloadable PDF of the current network and
 2. Make your changes and commit them.
 3. Push to your fork and create a pull request.
 
-## **License**
 
-This project is licensed under the  **MIT License** .
 
 ⚙️ System Metrics
 Access detailed server performance data such as CPU load, memory usage, and disk I/O in real time.
